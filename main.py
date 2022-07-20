@@ -15,6 +15,6 @@ if __name__ == '__main__':
     V_test = scnmfs_net.transform(Data_matrix=X_test)
     scores = scnmfs.KNN_results(X_train=scnmfs_net.V_train, Y_train=Y_train, X_test=V_test, Y_test=Y_test, neighbours=10)
     print(scores)
-    # just for 2D
+    # just for  2D
     scnmfs.Draw_KFold(X_train,Y_train)
 
